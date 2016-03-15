@@ -7,7 +7,7 @@
 
 ## Dependency Docs
 
-- [Stylus](http://stylus-lang.com/docs/media.html)
+- [Sass](http://sass-lang.com/)
 - [Jade](http://jade-lang.com/)
 - [MaterializeCSS](http://materializecss.com/)
 
