@@ -9,7 +9,7 @@
 
 - [Sass](http://sass-lang.com/)
 - [Jade](http://jade-lang.com/)
-- [MaterializeCSS](http://materializecss.com/)
+- [Skeleton](http://getskeleton.com/)
 
 ## Setup
 
