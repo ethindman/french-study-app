@@ -20,4 +20,4 @@ $ npm install
 $ gulp
 ```
 
-The first command will install the node dependencies for this project. The second command will compile/concat/minify your JS, Stylus and Jade files and start your server with accompanying watch tasks.
+The first command will install the node dependencies for this project. The second command will compile/concat/minify your JS, Sass and Jade files and start your server with accompanying watch tasks.
