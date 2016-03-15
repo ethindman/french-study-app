@@ -1,0 +1,17 @@
+scss_files: "**/**/*.scss"
+
+linters:
+  IdSelector:
+    enabled: false
+
+  ImportantRule:
+    enabled: false
+
+  SelectorFormat:
+    enabled: false
+
+  Comment:
+    enabled: false
+
+  VendorPrefix:
+    enabled: false

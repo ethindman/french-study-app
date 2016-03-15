@@ -1,10 +1,4 @@
-section.light.center
-  .row
-    .col.s12.m6.l4(ng-repeat="post in posts", ng-show="post.poster === user.uid")
-      .card.darken-1
-        .card-content.white-text.teal.lighten-3.left-align
-          span.card-title {{ post.text }}
-          p {{ post.translation }}
-        .card-action.left-align
-          a.btn(ng-href="/feed/{{ post.$id }}") View
-          button.btn.waves-effect.waves-light.float-right.modal-trigger(ng-click="deletePost(post.$id)") Delete
+.row
+  .twelve.columns
+    h1 Essential French Grammar
+    a.button.button-primary Click me

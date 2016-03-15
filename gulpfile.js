@@ -44,11 +44,11 @@ gulp.task('jade', function() {
         .on('finish', browser.reload);
 });
 
-// stylus -- compile, concat & compress stylus files -> app.min.css
-gulp.task('stylus', function () {
-    gulp.src('app/styles/*.styl')
-        .pipe($.concat('app.styl'))
-        .pipe($.stylus({
+// sass -- compile, concat & compress scss files -> app.min.css
+gulp.task('sass', function () {
+    gulp.src('app/stylesheets/*.scss')
+        .pipe($.concat('app.scss'))
+        .pipe($.sass({
             compress: true,
             'include css': true,
             use: nib()
@@ -78,9 +78,9 @@ gulp.task('server', function() {
     });
 });
 
-// compile -- compile JS, Jade, Stylus & Images
+// compile -- compile JS, Jade, SCSS & Images
 gulp.task('compile', function(done) {
-    sequence('clean', ['javascript', 'jade', 'stylus', 'images'], done);
+    sequence('clean', ['javascript', 'jade', 'sass', 'images'], done);
 });
 
 // default -- run copile tasks, start server and set watch tasks
@@ -91,6 +91,6 @@ gulp.task('default', ['compile', 'server'], function() {
     // Watch Jade files
     gulp.watch(['app/*.jade', 'app/views/**/*.jade', 'app/includes/**/*.jade'], ['jade']);
 
-    // Watch Stylus files
-    gulp.watch(['app/styles/*.styl', 'app/styles/**/*.styl'], ['stylus']);
+    // Watch SCSS files
+    gulp.watch(['app/stylesheets/*.scss', 'app/stylesheets/**/*.scss'], ['sass']);
 });
